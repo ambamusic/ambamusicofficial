@@ -70,6 +70,91 @@ footer {
     justify-content: space-between;
 }
 
+.container5 {
+    width: 460px;
+    padding: 40px;
+    background: #222;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.container5 .title {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.container5 .title2 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.container5 .price {
+    color: crimson;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin: 15px 0;
+}
+
+.container5 span {
+    font-size: 1.2rem;
+}
+
+.container5 .description {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin: 20px 0 20px;
+}
+
+.container5 .offer {
+    display: block;
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 25px;
+}
+
+.subscribe-button {
+    display: inline-block;
+    padding: 15px 0;
+    background-color: crimson;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    width: 100%;
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+
+.subscribe-button:hover {
+    background: #ff4d4d;
+}
+
+.ribbon-wrap {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    pointer-events: none;
+}
+
+.ribbon {
+    width: 230px;
+    font-size: 0.918rem;
+    text-align: center;
+    padding: 8px 0;
+    background: crimson;
+    color: #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+    right: -17px;
+    top: 29%;
+}
+
 section .title {
     position: relative;
     text-align: center;
@@ -467,6 +552,11 @@ section .title::after {
 
 .skills-content .right .php::before {
     width: 50%;
+}
+
+.Courses .title::after {
+    content: "Courses We Sell";
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .skills-content .right .mysql::before {
