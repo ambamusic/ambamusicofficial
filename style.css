@@ -12,6 +12,7 @@ html {
 body {
     color: #ededed;
     background: #081b29;
+    overflow-x: hidden;
 }
 
 .header {
@@ -61,7 +62,7 @@ body {
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background: url(img/Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.png);
+    background: url(img/1.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -167,6 +168,7 @@ body {
 .about-img img {
 
     max-width: 6300px;
+    
     height: auto;
     width: 100%;
     border-radius: 8px;
@@ -278,6 +280,120 @@ body {
     transition: .5s;
 }
 
+.container1 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.team h2 {
+    padding: 20px;
+    color: #ffffff;
+    font-size: 60px;
+    margin: 10px;
+    position: relative;
+}
+
+.container1 .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.02);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.container1 .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.container1 .card:hover .content {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.container1 .card .content .imgBx {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+}
+
+.container1 .card .content .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container1 .card .content .contentBx h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.container1 .card .content .contentBx h3 span {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+.container1 .card .sci {
+    position: absolute;
+    bottom: -50px;
+    display: flex;
+}
+
+.container1 .card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    opacity: 0;
+    transition-delay: calc(0.1s * var(--i));
+}
+
+.container1 .card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container1 .card .sci li a {
+    color: #fff;
+    font-size: 24px;
+}
+.team h2{
+    font-size: 90px;
+    text-align: center;
+    line-height: 1;
+}
+.team h2 span{
+    color: #0ef;
+}
 
 
 
@@ -286,10 +402,7 @@ body {
 
 
 
-
-
-
-.contact{
+.contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -297,49 +410,59 @@ body {
     padding-left: 30px;
     margin-top: 130px;
 }
-.contact-text h2{
+
+.contact-text h2 {
     font-size: 90px;
     line-height: 1;
     text-align: center;
 }
-.contact-text h2 span{
+
+.contact-text h2 span {
     color: #0ef;
 }
-.contact-text h4{
+
+.contact-text h4 {
     margin: 15px 0;
     color: rgb(228, 228, 228);
     font-size: 20px;
     font-weight: 600
 }
-.contact-text p{
+
+.contact-text p {
     color: rgb(117, 117, 117);
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 2rem;
 }
+
 .contact-list {
     margin-bottom: 3rem;
 }
-.contact-list li{
+
+.contact-list li {
     margin-bottom: 10px;
     display: block;
 }
-.contact-list li{
+
+.contact-list li {
     margin-bottom: 10px;
     display: block;
 }
-.contact-list i{
+
+.contact-list i {
     display: inline-block;
     color: #0ef;
     font-size: 20px;
     font-weight: 600;
     transition: all .40s ease;
 }
-.contact-list li a:hover{
+
+.contact-list li a:hover {
     transform: scale(1.01) translateY(-5px);
     color: #0ef;
 }
-.contact-icons i{
+
+.contact-icons i {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -353,15 +476,19 @@ body {
     text-decoration: none;
     margin: 30px 15px 30px 0;
 }
-.contact-icons i:hover{
+
+.contact-icons i:hover {
     background: #0ef;
     color: #000;
     box-shadow: 0 0 20px #0ef;
 }
-.contact-form form{
+
+.contact-form form {
     position: relative;
 }
-.contact-form form input,form textarea{
+
+.contact-form form input,
+form textarea {
     border: none;
     outline: none;
     width: 90%;
@@ -373,11 +500,13 @@ body {
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
 }
-.contact-form textarea{
+
+.contact-form textarea {
     resize: none;
     height: 220px;
 }
-.contact-form form .send{
+
+.contact-form form .send {
     display: inline-block;
     padding: 14px 60px;
     background: #0ef;
@@ -389,10 +518,11 @@ body {
     font-weight: 600;
 
 }
-.contact-form form .send:hover{
+
+.contact-form form .send:hover {
     box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 50px cyan,
-    0 0 100px cyan, 0 0 200px cyan;
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan;
 }
 
 
